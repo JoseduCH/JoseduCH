@@ -63,6 +63,7 @@ The system automatically regulates greenhouse temperature using PWM fan control 
                                       │ Cooling Fan │
                                       └─────────────┘
 
+```
 ## Hardware
 
 - ESP32
