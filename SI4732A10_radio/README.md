@@ -1,22 +1,22 @@
 # Multiband Radio Receiver Using the SI4732
 
-A functional FM radio receiver developed using the **SI4732 integrated circuit** and an **ESP32**, featuring an OLED display, rotary encoder, custom SMD adapter PCB, and an external audio amplification stage.
+A functional FM radio receiver developed using the SI4732 integrated circuit and an ESP32, featuring an OLED display, rotary encoder, custom SMD adapter PCB, and an external audio amplification stage.
 
-## 📖 Overview
+## Overview
 
-This project was developed as part of the **Introduction to Communication Systems** course at the Universidad Politécnica de Yucatán.
+This project was developed as part of the Introduction to Communication Systems course at the Universidad Politécnica de Yucatán.
 
 The objective was to build a functional radio receiver capable of tuning FM stations, displaying the current frequency and signal quality, and providing amplified audio output through external speakers.
 
 The project combines embedded software, digital communication, PCB design, and radio reception into a single system.
 
-## ✨ Features
+## Features
 
 - FM radio reception.
-- Frequency tuning from **87.5 MHz to 108.0 MHz**.
-- Frequency steps of **0.1 MHz**.
+- Frequency tuning from 87.5 MHz to 108.0 MHz.
+- Frequency steps of 0.1 MHz.
 - OLED display for the current station and signal information.
-- Real-time monitoring of **RSSI** and **SNR**.
+- Real-time monitoring of RSSI and SNR.
 - Rotary encoder for station selection.
 - I2C communication between the ESP32, OLED display, and SI4732.
 - Non-blocking firmware using `millis()`.
@@ -24,7 +24,7 @@ The project combines embedded software, digital communication, PCB design, and r
 - External audio amplification stage.
 - Stereo audio output through two speakers.
 
-## 🛠️ Hardware
+## Hardware
 
 The main components of the system are:
 
@@ -41,19 +41,19 @@ The main components of the system are:
 | **Potentiometer** | Controls the audio volume |
 | **Speakers** | Provide stereo audio output |
 
-## 🔌 System Architecture
+## System Architecture
 
 The system is divided into three main sections:
 
 ### 1. Radio Reception
 
-The **SI4732** is responsible for receiving and tuning FM radio stations.
+The SI4732 is responsible for receiving and tuning FM radio stations.
 
 Because the IC is designed for SMD assembly, a custom adapter PCB was designed to make it easier to connect to a breadboard and integrate it into the complete system.
 
 ### 2. Embedded Control
 
-The **ESP32** acts as the main controller. It communicates with the SI4732 and the OLED display through the **I2C protocol**.
+The ESP32 acts as the main controller. It communicates with the SI4732 and the OLED display through the I2C protocol.
 
 The rotary encoder allows the user to change the tuned frequency, while the firmware manages the radio configuration and display updates.
 
@@ -63,7 +63,7 @@ The audio signal from the radio IC is sent to an external amplification stage.
 
 This stage increases the signal level and allows the audio to be reproduced through two stereo speakers.
 
-## 💻 Firmware
+## Firmware
 
 The firmware was developed to provide a fluid and stable user experience.
 
@@ -82,9 +82,9 @@ The firmware was developed to provide a fluid and stable user experience.
 
 Instead of using `delay()` for periodic updates, the firmware uses `millis()`.
 
-This allows the display to be updated approximately every **300 milliseconds** without blocking the rest of the system, keeping the rotary encoder responsive.
+This allows the display to be updated approximately every 300 milliseconds without blocking the rest of the system, keeping the rotary encoder responsive.
 
-## 📡 FM Tuning
+## FM Tuning
 
 The receiver was configured to operate within the commercial FM band:
 
@@ -96,7 +96,7 @@ Frequency step:    0.1 MHz
 
 The firmware applies software limits to prevent the user from tuning outside the configured band.
 
-## 📊 Signal Monitoring
+## Signal Monitoring
 
 The OLED display provides information about the current reception quality.
 
@@ -107,7 +107,7 @@ The system reads:
 
 These values are used to monitor the quality of the received signal and provide a graphical indication of reception.
 
-## 🖥️ User Interface
+## User Interface
 
 The user interacts with the receiver through:
 
@@ -115,7 +115,7 @@ The user interacts with the receiver through:
 - **OLED display:** Shows the current station and signal information.
 - **Audio output:** Allows the received station to be heard through external speakers.
 
-## 📁 Project Structure
+## Project Structure
 
 The following structure is recommended for organizing the repository:
 
@@ -127,7 +127,7 @@ Multiband-Radio-SI4732/
 ├── docs/
 │   └── Introduction_to_Communication_Systems_Final_Project.pdf
 │
-├── src/
+├── firmware/
 │   └── ... ESP32 firmware ...
 │
 ├── hardware/
@@ -135,7 +135,7 @@ Multiband-Radio-SI4732/
 │   ├── pcb/
 │   └── gerbers/
 │
-└── images/
+└── results/
     ├── receiver.jpg
     ├── pcb.jpg
     └── oled.jpg
@@ -143,7 +143,7 @@ Multiband-Radio-SI4732/
 
 > **Note:** The folders above are a suggested organization. Add the corresponding files only if they are available in your project.
 
-## 📚 Technical Concepts
+## Technical Concepts
 
 This project involved the following concepts:
 
@@ -158,7 +158,7 @@ This project involved the following concepts:
 - Non-blocking programming.
 - Audio amplification.
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 Through this project, I gained practical experience in:
 
@@ -170,7 +170,7 @@ Through this project, I gained practical experience in:
 - Implementing non-blocking firmware.
 - Integrating hardware and software into a functional communication system.
 
-## 📄 Documentation
+## Documentation
 
 The complete project documentation is available in the following file:
 
@@ -178,14 +178,14 @@ The complete project documentation is available in the following file:
 
 The document includes the project objective, hardware description, firmware explanation, and conclusion.
 
-## 👥 Team
+## Team
 
 - **Jose Eduardo Chim Cano**
 - **Víctor Adrián Jimenes Castañedas**
 - **Alan Sebastián Ortiz Pebas**
 - **Ian Eduardo Paredes Castillo**
 
-## 🎓 Academic Information
+## Academic Information
 
 **Course:** Introduction to Communication Systems  
 **Program:** Embedded Systems Engineering  
@@ -193,10 +193,10 @@ The document includes the project objective, hardware description, firmware expl
 **Semester:** 7th Semester  
 **Project:** Multiband Radio Receiver Using the SI4732 Integrated Circuit
 
-## 📌 Conclusion
+## Conclusion
 
 The project demonstrated the successful integration of hardware and software through the development of a functional FM radio receiver.
 
-The combination of the **SI4732**, **ESP32**, custom adapter PCB, OLED interface, and external audio amplification stage resulted in a system capable of tuning FM stations and monitoring reception quality in real time.
+The combination of the SI4732, ESP32, custom adapter PCB, OLED interface, and external audio amplification stage resulted in a system capable of tuning FM stations and monitoring reception quality in real time.
 
 This project provided practical experience in embedded systems design and the implementation of communication technologies.
