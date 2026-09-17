@@ -180,17 +180,10 @@ The document includes the project objective, hardware description, firmware expl
 - **Ian Eduardo Paredes Castillo**
 
 ## Academic Information
+This project is intended for educational and research purposes.
 
 **Course:** Introduction to Communication Systems  
 **Program:** Embedded Systems Engineering  
 **University:** Universidad Politécnica de Yucatán  
 **Semester:** 7th Semester  
 **Project:** Multiband Radio Receiver Using the SI4732A10 Integrated Circuit
-
-## Conclusion
-
-The project demonstrated the successful integration of hardware and software through the development of a functional FM radio receiver.
-
-The combination of the SI4732A10, ESP32, custom adapter PCB, OLED interface, and external audio amplification stage resulted in a system capable of tuning FM stations and monitoring reception quality in real time.
-
-This project provided practical experience in embedded systems design and the implementation of communication technologies.
