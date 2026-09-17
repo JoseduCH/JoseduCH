@@ -18,31 +18,27 @@ Unlike conventional STM32 development boards, this design integrates:
 
 The board was developed as part of the Embedded Systems course and follows several IPC standards to ensure manufacturability, assembly quality, and signal integrity. 【1-e4a3fa】
 
----
-
 ## Features
 
-✅ STM32F411CEU6 Microcontroller
+-STM32F411CEU6 Microcontroller
 
-✅ ESP8266 (ESP-12F) WiFi Module
+-ESP8266 (ESP-12F) WiFi Module
 
-✅ CH340G USB-UART Interface
+-CH340G USB-UART Interface
 
-✅ Boost Converter Power Stage
+-Boost Converter Power Stage
 
-✅ PWM Generation
+-PWM Generation
 
-✅ ADC Data Acquisition
+-ADC Data Acquisition
 
-✅ UART Telemetry
+-UART Telemetry
 
-✅ I2C Communication
+-I2C Communication
 
-✅ GPIO Expansion Headers
+-GPIO Expansion Headers
 
-✅ PCB Designed Following IPC Standards
-
----
+-PCB Designed Following IPC Standards
 
 ## Hardware Architecture
 
@@ -56,8 +52,6 @@ The board was developed as part of the Embedded Systems course and follows sever
 - PCIe-Based Expansion Connector
 - User Push Buttons and Status LEDs
 
----
-
 ## PCB Design
 
 The PCB was designed using EasyEDA and manufactured through JLCPCB.
@@ -70,16 +64,6 @@ Design considerations include:
 - Dedicated decoupling network
 - IPC-compliant footprint selection
 - Optimized routing for power and signal integrity
-
-### PCB Images
-
-Add your PCB images here:
-
-![PCB Top](images/pcb_top.pngb_bottom.png
-
-![3ges/pcb_3d.png
-
----
 
 ## Functional Validation
 
@@ -112,8 +96,6 @@ The final hardware was validated through multiple tests.
 - Output voltage up to approximately 12V
 - Thermal stability during continuous operation
 
----
-
 ## Applications
 
 Potential applications include:
@@ -124,8 +106,6 @@ Potential applications include:
 - Environmental Control
 - Embedded Systems Education
 - Rapid Prototyping
-
----
 
 ## Development Tools
 
@@ -145,8 +125,6 @@ Potential applications include:
 - Hercules Serial Terminal
 - Digital Multimeter
 - Oscilloscope
-
----
 
 ## Repository Structure
 
@@ -170,7 +148,6 @@ STM32-Development-Board/
 └── images/
 ```
 
----
 
 ## Documentation
 
@@ -189,7 +166,6 @@ The document includes:
 - Firmware architecture
 - Testing and validation results
 
----
 
 ## Future Improvements
 
@@ -200,20 +176,6 @@ The document includes:
 - Smart greenhouse automation
 - RGB Grow Light control
 - Data logging and analytics
-
----
-
-## Author
-
-**José Eduardo Chim Cano**
-
-Embedded Systems Engineering Student
-
-GitHub: https://github.com/TU-USUARIO
-
-LinkedIn: https://linkedin.com/in/TU-USUARIO
-
----
 
 ## License
 
