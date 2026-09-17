@@ -16,7 +16,7 @@ Unlike conventional STM32 development boards, this design integrates:
 - Custom PCB designed in EasyEDA
 - Industrial-oriented hardware architecture
 
-The board was developed as part of the Embedded Systems course and follows several IPC standards to ensure manufacturability, assembly quality, and signal integrity. 【1-e4a3fa】
+The board was developed as part of the Embedded Systems course and follows several IPC standards to ensure manufacturability, assembly quality, and signal integrity.
 
 ## Features
 
@@ -136,16 +136,25 @@ STM32-Development-Board/
 │   └── STM32_development_board.pdf
 │
 ├── hardware/
-│   ├── schematic.pdf
-│   ├── pcb_top.png
-│   ├── pcb_bottom.png
-│   ├── pcb_3d.png
-│   └── gerbers/
+│   ├── IoT_app.png
+│   ├── PCI1.png
+│   ├── STM32_SYS_MIN.png
+│   ├── USB-UART-USART.png
+│   └── boost_conv.png
 │
-├── firmware/
-│   └── source_code
+├── manufacture_files/
+│   ├── BOM_STM32_2025-11-15.csv
+│   ├── Gerber_STM32_PCB_STM32_2_2025-11-15.zip
+│   └── PickAndPlace_PCB_STM32_2_2025-11-15.csv
 │
-└── images/
+└── results/
+│   ├── 3D_bottom.png
+│   ├── 3D_top.png
+│   ├── Buttom_view.png
+│   ├── Implementation.png
+|   ├── PCB_view.png
+│   └── Top_view.png
+│
 ```
 
 
@@ -177,6 +186,20 @@ The document includes:
 - RGB Grow Light control
 - Data logging and analytics
 
-## License
+## Team
+
+- **Jose Eduardo Chim Cano**
+- **Víctor Adrián Jimenes Castañedas**
+- **Alan Sebastián Ortiz Pebas**
+- **Ian Eduardo Paredes Castillo**
+
+## Academic Information
 
 This project is intended for educational and research purposes.
+
+**Course:** PCB manufacturing processes   
+**Program:** Embedded Systems Engineering  
+**University:** Universidad Politécnica de Yucatán  
+**Semester:** 6th Semester  
+**Project:** STM32 Development Board
+
